@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  font-size: 100%;
 }
 
 html {
@@ -21,6 +22,10 @@ header {
   text-align: right;
 }
 
+footer {
+display: none;
+}
+
 main {
   padding-left: 10%;
   padding-right: 10%;
@@ -31,15 +36,6 @@ main {
   height: 100vh;
 }
 
-footer {
-  width: 100%;
-  padding-left: 10%;
-  padding-right: 10%;
-  background-color: #ed8c51;
-  color: #ffffff;
-  position: fixed;
-  bottom: 0;
-}
 
 article {
   color: #ffffff;
@@ -98,10 +94,10 @@ p {
   color: #fbbc05;
 }
 
-#btn-see-apps {
+.btn {
   display: block;
   margin: auto;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #ea4335;
   background-color: #fbbc05;
@@ -150,11 +146,11 @@ p {
 /*** Contact form stuff ***/
 
 textarea, input[type=text], [type=email] {
-    border: 1px solid #555555;
-      line-height: 1.5rem;
-        padding: 0.25em 0 0.25em 0.25em;
-          width: 100%;
-        }
+  border: 1px solid #555555;
+  line-height: 1.5rem;
+  padding: 0.25em 0 0.25em 0.25em;
+  width: 100%;
+}
 
 #contact p {
   font-family: 'Libre Franklin', sans-serif;
@@ -185,12 +181,6 @@ textarea, input[type=text], [type=email] {
   padding: 1.5em 0 !important;
 }
 
-#g-recaptcha {
-  width: 100% !important;
-}
-
-
-/* adjusting the placeholder text color */
 ::placeholder { /* for most browsers */
   color: #aaaaaa;
   opacity: 1; /* firefox */
@@ -207,10 +197,10 @@ textarea, input[type=text], [type=email] {
 /* Source: https://geekgoddess.com/how-to-resize-the-google-nocaptcha-recaptcha */
 
 #rc-imageselect, .g-recaptcha {
-transform: scale(0.86);
--webkit-transform: scale(0.86);
-transform-origin: 0 0;
--webkit-transform-origin: 0 0;
+  transform: scale(0.87);
+  -webkit-transform: scale(0.87);
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
 }
 
 
@@ -261,4 +251,24 @@ transform-origin: 0 0;
 
 }
 
+/***** MEDIA QUERY HEIGHT *****/
+@media (min-height: 830px) {
+
+footer {
+  display: block;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #ed8c51;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #ffffff;
+}
+
+footer p {
+padding: 1rem;
+}
+
+
+}
 
