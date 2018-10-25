@@ -24,6 +24,7 @@ header {
 main {
   padding-left: 10%;
   padding-right: 10%;
+  padding-top: 7rem;
   background-image: url('../images/background-desktop.png');
   background-size: 100%;
   background-repeat: no-repeat;
@@ -53,7 +54,7 @@ aside {
 }
 
 #logo {
-  max-width: 120px; 
+  max-width: 130px; 
   width: 100%;
   display: inline;
   float: left;
