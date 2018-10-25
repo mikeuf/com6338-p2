@@ -4,7 +4,7 @@ function contactFormSubmit() {
      if (grecaptcha.getResponse() == ""){ 
        alert("Complete the reCAPTCHA verification before submitting."); 
      } else { 
-    document.getElementById('form-status').innerHTML = '<p style="text-align:center">Submitting your message...<br /><br /><i class="fa fa-circle-o-notch fa-spin" style="font-size:72px;color:#333333"></i></p>';
+    document.getElementById('form-status').innerHTML = '<p style="text-align:center">Submitting your message...<br /><br /><i class="fa fa-circle-o-notch fa-spin" style="font-size:72px;color:#ffffff"></i></p>';
 
 
     var formName = document.getElementById("form-name").value; 

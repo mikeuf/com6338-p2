@@ -147,6 +147,75 @@ p {
   text-decoration: none;
 }
 
+/*** Contact form stuff ***/
+
+textarea, input[type=text], [type=email] {
+    border: 1px solid #555555;
+      line-height: 1.5rem;
+        padding: 0.25em 0 0.25em 0.25em;
+          width: 100%;
+        }
+
+#contact p {
+  font-family: 'Libre Franklin', sans-serif;
+  padding-bottom: 0.5em;
+}
+
+#contact-message-label {
+  padding: 0.5em 0 0 0 !important;
+}
+
+#contact-form {
+  font-size: 1.25rem;
+}
+
+
+#contact-form label {
+  display: inline-block;
+  padding: 0.5em 0 0.25em 0;
+}
+
+#mailing-list-checkbox {
+  display: inline-block;
+  position: relative;
+  top: -3px;
+}
+
+#mailing-list-checkbox-label {
+  padding: 1.5em 0 !important;
+}
+
+#g-recaptcha {
+  width: 100% !important;
+}
+
+
+/* adjusting the placeholder text color */
+::placeholder { /* for most browsers */
+  color: #aaaaaa;
+  opacity: 1; /* firefox */
+}
+
+::-ms-input-placeholder { /* edge */
+  color: #aaaaaa;
+}
+:-ms-input-placeholder { /* IE*/
+  color: #aaaaaa;
+}
+
+/*** Fixing recaptcha ***/
+/* Source: https://geekgoddess.com/how-to-resize-the-google-nocaptcha-recaptcha */
+
+#rc-imageselect, .g-recaptcha {
+transform: scale(0.86);
+-webkit-transform: scale(0.86);
+transform-origin: 0 0;
+-webkit-transform-origin: 0 0;
+}
+
+
+
+
 /***** MEDIA QUERY 700PX+ *****/
 @media (min-width: 700px) {
 
@@ -174,10 +243,10 @@ p {
     padding-right: 2rem;
   }
 
-#header-desktop-nav a, a:link, a:visited, a:focus, a:hover, a:active {
-  color: #ea4335;
-  text-decoration: none;
-}
+  #header-desktop-nav a, a:link, a:visited, a:focus, a:hover, a:active {
+    color: #ea4335;
+    text-decoration: none;
+  }
 
   #header-desktop-nav ul li a {
     color: #ea4335;
