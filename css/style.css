@@ -168,6 +168,11 @@ p {
 padding-bottom: 1rem;
 }
 
+#products h2 {
+
+font-size: 1.5rem;
+}
+
 #products section {
 padding-bottom: 3rem;
 }
@@ -236,7 +241,7 @@ textarea, input[type=text], [type=email] {
 #products {
   padding: 3rem;
   max-width: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.2);
   overflow: hidden;
   margin: 0 0 2em 0;
 
