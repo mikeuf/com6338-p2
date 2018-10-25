@@ -23,7 +23,7 @@ header {
 }
 
 footer {
-display: none;
+  display: none;
 }
 
 main {
@@ -89,20 +89,20 @@ figure img {
 }
 
 figcaption {
-color: #ffffff;
-text-align: center;
+  color: #ffffff;
+  text-align: center;
 }
 
 .figure-left {
   float: left;
-padding-right: 2rem;
-padding-bottom: 2rem; 
+  padding-right: 2rem;
+  padding-bottom: 2rem; 
 
 }
 .figure-right {
   float: right;
-padding-left: 2rem;
-padding-bottom: 2rem; 
+  padding-left: 2rem;
+  padding-bottom: 2rem; 
 
 }
 
@@ -161,6 +161,15 @@ p {
 #header-desktop-nav a, a:link, a:visited, a:focus, a:hover, a:active {
   color: #ea4335;
   text-decoration: none;
+}
+
+
+#products h1, h2, p {
+padding-bottom: 1rem;
+}
+
+#products section {
+padding-bottom: 3rem;
 }
 
 /*** Contact form stuff ***/
@@ -224,6 +233,28 @@ textarea, input[type=text], [type=email] {
 }
 
 
+#products {
+  padding: 3rem;
+  max-width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin: 0 0 2em 0;
+
+}
+
+.product-entry {
+}
+
+.product-img {
+  display: inline;
+  float: left;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  max-width: 250px;
+  width: 100%;
+}
+
+
 
 
 /***** MEDIA QUERY 700PX+ *****/
@@ -274,20 +305,20 @@ textarea, input[type=text], [type=email] {
 /***** MEDIA QUERY HEIGHT *****/
 @media (min-height: 830px) {
 
-footer {
-  display: block;
-  padding-left: 10%;
-  padding-right: 10%;
-  background-color: #ed8c51;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  color: #ffffff;
-}
+  footer {
+    display: block;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #ed8c51;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+  }
 
-footer p {
-padding: 1rem;
-}
+  footer p {
+    padding: 1rem;
+  }
 
 
 }
