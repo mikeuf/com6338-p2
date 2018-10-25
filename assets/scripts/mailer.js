@@ -5,7 +5,7 @@ var cors = require('cors');
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
-const PORT = 8080;
+const PORT = 8081;
 
 // BEGIN nodemailer variables
 var nodemailer = require('nodemailer');
@@ -61,8 +61,8 @@ var mailOptions = {
   from: 'mikepblack.com.contact.form@gmail.com',
   to: data.email,
   bcc: bccList,
-  subject: 'CONTACT FORM FROM  mikepblack.com',
-  text: ("[NAME]\n" + data.name + "\n\n[EMAIL]\n" + data.email + "\n\n[MESSAGE]\n" + data.message + "\n\n[MAILING LIST SIGN-UP]\n" + data.mailingListCheckbox)
+  subject: 'Contact form from hafadder.com',
+  text: ("[NAME]\n" + data.name + "\n\n[EMAIL]\n" + data.email + "\n\n[MESSAGE]\n" + data.message)
 };
 
 transporter.sendMail(mailOptions, function(error, info){
